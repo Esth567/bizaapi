@@ -3,7 +3,7 @@ from rest_framework.generics import GenericAPIView
 from .serializers import UserSerializer,LoginSerializer
 from rest_framework.response import Response
 from rest_framework import status
-from django.conf import Settings
+from django.conf import settings
 from django.contrib import auth
 import jwt
 
