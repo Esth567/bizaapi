@@ -19,6 +19,9 @@ PAYMENT_HOST = 'localhost:8000'
 import os
 from pathlib import Path
 
+import django_heroku
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 import datetime
 
@@ -240,3 +243,5 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOW_ALL_ORIGINS = True
+
+django_heroku.settings(locals())

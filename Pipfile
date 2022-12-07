@@ -8,6 +8,8 @@ django = "*"
 pyjwt = "*"
 drf-yasg = "*"
 pillow = "*"
+django-heroku = "*"
+gunicorn = "*"
 
 [dev-packages]
 
