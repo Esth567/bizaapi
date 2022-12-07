@@ -63,6 +63,10 @@ def image_upload_view(request):
     else:
         form = ImageForm()
     return render(request, 'index.html', {'form': form})
+<<<<<<< HEAD
       
       
 
+=======
+      
+>>>>>>> 8ee724bb34088b36f1753831ffdbb214d079ada9

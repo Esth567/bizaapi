@@ -12,6 +12,10 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 PAYMENT_HOST = 'localhost:8000'
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8ee724bb34088b36f1753831ffdbb214d079ada9
 import os
 from pathlib import Path
 
@@ -22,6 +26,15 @@ import datetime
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 from datetime import timedelta
+
+# Base url to serve media files
+MEDIA_URL = '/media/'
+
+# Path where media is stored
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
+from datetime import timedelta
+
 
 # Base url to serve media files
 MEDIA_URL = '/media/'
@@ -54,17 +67,27 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+<<<<<<< HEAD
     'drf_yasg',
+=======
+>>>>>>> 8ee724bb34088b36f1753831ffdbb214d079ada9
     'authentication',
     'payments',
     'shopz',
 
+<<<<<<< HEAD
 
     
     'rest_framework_simplejwt.token_blacklist',
     
     "corsheaders",
     
+=======
+    
+    'rest_framework_simplejwt.token_blacklist',
+    
+    "corsheaders",   
+>>>>>>> 8ee724bb34088b36f1753831ffdbb214d079ada9
 ]
 
 SWAGGER_SETTINGS = {
@@ -153,6 +176,10 @@ TEMPLATES = [
 PAYMENT_VARIANTS = {
     'default': ('payments.dummy.DummyProvider', {'capture': False})}
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8ee724bb34088b36f1753831ffdbb214d079ada9
 WSGI_APPLICATION = 'bizaapi.wsgi.application'
 
 
