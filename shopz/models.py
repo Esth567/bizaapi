@@ -3,7 +3,10 @@ from django.contrib .auth.models import User
 import datetime
 
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> 8ee724bb34088b36f1753831ffdbb214d079ada9
 # Create your models here.
 
 class Category(models.Model):
@@ -47,7 +50,11 @@ class Stores(models.Model):
     quantity = models.IntegerField(default=1)
     price = models.IntegerField(default=0)
     address = models.CharField(max_length=50, default='', blank=True)
+<<<<<<< HEAD
+    date = models.DateField(default=datetime.date.today)
+=======
     date = models.DateField(default=datetime.datetime.today)
+>>>>>>> 8ee724bb34088b36f1753831ffdbb214d079ada9
     status = models.BooleanField(default=False)
     description =  models.TextField(max_length=500, blank=True, null=True)
     image = models.ImageField(upload_to='users/%Y/%m/%d/', blank=True) 
